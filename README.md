@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Interface com Next.js e Storybook
 
-## Getting Started
+## 📋 **Objetivo da Tarefa**
 
-First, run the development server:
+Este projeto foi desenvolvido com os seguintes objetivos:
+1. Criar uma interface de usuário baseada no design disponibilizado no [Figma](#).
+2. Implementar e documentar todos os estados dos componentes utilizando **Storybook**.
+3. Aplicar boas práticas de desenvolvimento, modularidade, reutilização de componentes e estilização eficiente.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 **Tecnologias Utilizadas**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **[Next.js](https://nextjs.org/):** Framework React para aplicações web modernas e otimizadas.
+- **[Storybook](https://storybook.js.org/):** Ferramenta para desenvolvimento e documentação de componentes isolados.
+- **[Tailwind CSS](https://tailwindcss.com/):** Biblioteca para estilização rápida e eficiente.
+- **[TypeScript](https://www.typescriptlang.org/):** Para tipagem estática e maior confiabilidade no desenvolvimento.
+-  **[Zod](https://zod.dev/):**  Biblioteca para validação de esquemas de dados, utilizada para garantir a conformidade de informações enviadas e manipuladas. 
+- **[React Toastify](https://www.npmjs.com/package/react-toastify):** Biblioteca para exibição de notificações amigáveis e funcionais, integrada para melhorar a experiência do usuário.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ **Instalação e Execução do Projeto**
 
-To learn more about Next.js, take a look at the following resources:
+### **Pré-requisitos**
+Certifique-se de ter instalado:
+- Node.js (versão 16 ou superior)
+- npm ou yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Passos para rodar o projeto**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
 
-## Deploy on Vercel
+2. **Instale as dependências**:
+	```
+	npm install
+	ou
+	yarn install
+	```
+3. **Execute o projeto localmente**:
+	```
+	npm run dev 
+	ou
+	yarn dev
+	```
+4. **Abra o Storybook**: Em outro terminal, execute:
+	```
+	npm run storybook
+	ou
+	yarn storybook
+	```
+	Acesse o Storybook em http://localhost:6006.
+	
+---
+## 📚 **Componentes Documentados no Storybook**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   **Button**: Botão com variações de tamanho, cor e estado de focus.
+-   **ToastMessage**: Mensagem de notificação com título, descrição.
+-   **Input**: Campo de entrada com suporte a estados de erro e succes e diferentes tamanhos.
+-   **Heading**: Componente para título e subtítulo com variação de cor, tamanho de texto para desktop e mobile e peso da fonte.
+-  **Text**: Componente para textos com variação de cor, tamanho de texto para e peso da fonte.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Todos os componentes foram desenvolvidos com foco em reutilização e estados documentados.
+
+---
+
+# ✨ **Como Avaliar**
+
+-   Clone o projeto e execute localmente seguindo as instruções acima.
+-   Verifique os componentes no Storybook (http://localhost:6006).
+-   Explore a interface principal e compare com o design disponibilizado no Figma.
+- Link Figma: [https://www.figma.com/design/QT4MBwQzsNBiDzZfIgirjQ/Teste-valePay?node-id=1-5440&t=xINcWgCiAe5hbcjW-1](https://www.figma.com/design/QT4MBwQzsNBiDzZfIgirjQ/Teste-valePay?node-id=1-5440&t=xINcWgCiAe5hbcjW-1)
+
+---
+## 📄 **Licença**
+
+Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.
